@@ -111,7 +111,7 @@ class TaskController extends Controller
     public function destroy(string $id)
     {
         //
-        $destroy = tarefa::find($id);
+        $destroy = task::find($id);
         $destroy->delete();
     }
 }
